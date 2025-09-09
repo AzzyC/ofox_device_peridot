@@ -58,4 +58,9 @@ OF_USE_LZ4_COMPRESSION := 1
 
 # build all the partition tools
 OF_ENABLE_ALL_PARTITION_TOOLS := 1
-#
+
+# Set to 1 to skip the FBE decryption routines (prevents hanging at the Fox logo or Redmi/Mi logo)
+OF_SKIP_FBE_DECRYPTION := 1
+
+# Set this to 1 to replace the "Swipe up" lockscreen screen with a button
+OF_USE_LOCKSCREEN_BUTTON := 1
