@@ -48,15 +48,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export FOX_USE_BASH_SHELL=1
-	export FOX_ASH_IS_BASH=1
 	export FOX_USE_NANO_EDITOR=1
 	export FOX_DELETE_AROMAFM=1
 	export FOX_REMOVE_AAPT=1
-	export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
 	export FOX_DELETE_MAGISK_ADDON=1
-	export OF_MAINTAINER=azzy
-	export OF_DEFAULT_TIMEZONE="GMT0BST,M3.5.0,M10.5.0"
-	export FOX_VARIANT="A14"
+	export OF_DEFAULT_TIMEZONE="GMT0;BST,M3.5.0,M10.5.0"
 else
 	if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
 		echo "I: This script requires bash. Not processing the $FDEVICE $(basename $0)"
